@@ -25,9 +25,9 @@ module.exports = function(environment) {
       // StratumHost: 'http://eth.3pool.cn',
       // StratumPort: 9999,
 
-      // Fee and payout details
-      //  PoolFee: '1%',
-     // PayoutThreshold: '0.06 Ether',
+       Fee and payout details
+       PoolFee: '0%',
+       PayoutThreshold: '1 Ether',
 
       // For network hashrate (change for your favourite fork)
       BlockTime: 14.4

@@ -28,10 +28,20 @@
 			<div class="col-md-2 text-center">
 				<div style="height: 130px" class="panel panel-default">
 					<div class="panel-heading">
-						<h3 class="panel-title">矿池费用</h3>
+						<h3 class="panel-title">最近出块</h3>
 					</div>
 					<div class="panel-body">
-						<h4>1%</h4>
+						<h4>{{format-number stats.model.stats.lastBlockFound}}</h4>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-2 text-center">
+				<div style="height: 130px" class="panel panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title">幸运指数</h3>
+					</div>
+					<div class="panel-body">
+						<h4>{{format-number stats.roundVariance style='percent'}}</h4>
 					</div>
 				</div>
 			</div>

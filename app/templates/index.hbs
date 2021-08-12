@@ -1,8 +1,6 @@
 <div class="jumbotron ">
 	<div class="container">
-		<div role="warning" class="alert alert-info">
-			<h5 class="text-center">云池是使用PROP模式稳定，高效的以太坊矿池，推广期间免收手续费.</h5>
-		</div>
+
 		<hr/>
 		<div class="row">
 			<div class="col-md-2 text-center">
@@ -28,17 +26,17 @@
 			<div class="col-md-2 text-center">
 				<div style="height: 130px" class="panel panel-default">
 					<div class="panel-heading">
-						<h3 class="panel-title">最近出块</h3>
+						<h3 class="panel-title">最后出块</h3>
 					</div>
 					<div class="panel-body">
-						<h4>{{format-number stats.model.stats.lastBlockFound}}</h4>
+						<h4>{{format-relative (seconds-to-ms stats.model.stats.lastBlockFound)}}</h4>
 					</div>
 				</div>
 			</div>
 			<div class="col-md-2 text-center">
-				<div style="height: 130px" class="panel panel-default">
+				<div style="height: 130px" class="panel panel-warning">
 					<div class="panel-heading">
-						<h3 class="panel-title">幸运指数</h3>
+						<h3 class="panel-title">本轮幸运值</h3>
 					</div>
 					<div class="panel-body">
 						<h4>{{format-number stats.roundVariance style='percent'}}</h4>
@@ -55,16 +53,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-md-2 text-center">
-				<div style="height: 130px" class="panel panel-danger">
-					<div class="panel-heading">
-						<h3 class="panel-title">全网算力</h3>
-					</div>
-					<div class="panel-body">
-						<h4>{{format-hashrate stats.hashrate}}</h4>
-					</div>
-				</div>
-			</div>
+
 			<div class="col-md-2 text-center">
 				<div style="height: 130px" class="panel panel-primary">
 					<div class="panel-heading">
@@ -106,7 +95,7 @@
 				Server
 			</th>
 			<td>
-				eth.3pool.cn
+				whayla.xyz
 			</td>
 		</tr>
 		<tr class="text-center">
@@ -114,7 +103,7 @@
 				Stratum Port
 			</th>
 			<td colspan="4">
-				9999
+				8008
 			</td>
 		</tr>
 		<tr class="text-center">
@@ -130,7 +119,7 @@
 				Username
 			</th>
 			<td colspan="4">
-				你的以太坊钱包地址,例如:0xb85150eb365e7df0941f0cf08235f987ba91506a
+				你的以太坊钱包地址,例如:
 			</td>
 		</tr>
 		</tbody>
@@ -151,9 +140,9 @@
 						<li>下载和配置教程: <a href="https://github.com/nanopool/Claymore-Dual-Miner" target="_blank" rel="nofollow">Github</a></li>
 					</ul>
 					<h5>使用以下命令启动挖矿,将你的以太坊钱包地址做为用户名</h5>
-					<pre>ethdcrminer64.exe -epool eth.3pool.cn:9999 -ewal 以太坊钱包地址 -epsw 密码 -eworker 矿工名</pre>
+					<pre>ethdcrminer64.exe -epool whayla.xyz:8008 -ewal 以太坊钱包地址 -epsw 密码 -eworker 矿工名</pre>
 					<h5>完整命令实例</h5>
-					<pre>ethdcrminer64.exe -epool eth.3pool.cn:9999 -ewal 0xb85150eb365e7df0941f0cf08235f987ba91506a -epsw x -eworker rig-1</pre>
+					<pre>ethdcrminer64.exe -epool whayla.xyz:9009 -ewal 0xb85150eb365e7df0941f0cf08235f987ba91506a -epsw x -eworker rig-1</pre>
 				</div>
 			</div>
 		</div>

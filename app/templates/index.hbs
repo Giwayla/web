@@ -1,14 +1,14 @@
 <div class="jumbotron ">
 	<div class="container">
 		<div role="warning" class="alert alert-info">
-			<h5 class="text-center">ÔÆ³ØÊÇÊ¹ÓÃPROPÄ£Ê½ÎÈ¶¨£¬¸ßĞ§µÄÒÔÌ«·»¿ó³Ø£¬ÍÆ¹ãÆÚ¼äÃâÊÕÊÖĞø·Ñ.</h5>
+			<h5 class="text-center">äº‘æ± æ˜¯ä½¿ç”¨PROPæ¨¡å¼ç¨³å®šï¼Œé«˜æ•ˆçš„ä»¥å¤ªåŠçŸ¿æ± ï¼Œæ¨å¹¿æœŸé—´å…æ”¶æ‰‹ç»­è´¹.</h5>
 		</div>
 		<hr/>
 		<div class="row">
 			<div class="col-md-2 text-center">
 				<div style="height: 130px" class="panel panel-warning">
 					<div class="panel-heading">
-						<h3 class="panel-title">¿ó³ØËãÁ¦</h3>
+						<h3 class="panel-title">çŸ¿æ± ç®—åŠ›</h3>
 					</div>
 					<div class="panel-body">
 						<h4>{{format-hashrate stats.model.hashrate}}</h4>
@@ -18,7 +18,7 @@
 			<div class="col-md-2 text-center">
 				<div style="height: 130px" class="panel panel-info">
 					<div class="panel-heading">
-						<h3 class="panel-title">ÔÚÏß¿ó¹¤</h3>
+						<h3 class="panel-title">åœ¨çº¿çŸ¿å·¥</h3>
 					</div>
 					<div class="panel-body">
 						<h4>{{format-number stats.model.minersTotal}}</h4>
@@ -28,7 +28,7 @@
 			<div class="col-md-2 text-center">
 				<div style="height: 130px" class="panel panel-default">
 					<div class="panel-heading">
-						<h3 class="panel-title">¿ó³Ø·ÑÓÃ</h3>
+						<h3 class="panel-title">çŸ¿æ± è´¹ç”¨</h3>
 					</div>
 					<div class="panel-body">
 						<h4>1%</h4>
@@ -38,7 +38,7 @@
 			<div class="col-md-2 text-center">
 				<div style="height: 130px" class="panel panel-success">
 					<div class="panel-heading">
-						<h3 class="panel-title">È«ÍøÄÑ¶È</h3>
+						<h3 class="panel-title">å…¨ç½‘éš¾åº¦</h3>
 					</div>
 					<div class="panel-body">
 						<h4>{{with-metric-prefix stats.difficulty}}</h4>
@@ -48,7 +48,7 @@
 			<div class="col-md-2 text-center">
 				<div style="height: 130px" class="panel panel-danger">
 					<div class="panel-heading">
-						<h3 class="panel-title">È«ÍøËãÁ¦</h3>
+						<h3 class="panel-title">å…¨ç½‘ç®—åŠ›</h3>
 					</div>
 					<div class="panel-body">
 						<h4>{{format-hashrate stats.hashrate}}</h4>
@@ -58,7 +58,7 @@
 			<div class="col-md-2 text-center">
 				<div style="height: 130px" class="panel panel-primary">
 					<div class="panel-heading">
-						<h3 class="panel-title">Çø¿é¸ß¶È</h3>
+						<h3 class="panel-title">åŒºå—é«˜åº¦</h3>
 					</div>
 					<div class="panel-body">
 						<h4>{{format-number stats.height}}</h4>
@@ -71,12 +71,12 @@
 <hr/>
 <div class="container">
   <div class="stats">
-    <h4>¿ó»ú×´Ì¬ &amp; Ö§¸¶¼ÇÂ¼</h4>
+    <h4>çŸ¿æœºçŠ¶æ€ &amp; æ”¯ä»˜è®°å½•</h4>
     <div class="input-group">
-      {{input value=cachedLogin class="form-control" placeholder="ÊäÈëÄãµÄÒÔÌ«·»µØÖ·"}}
+      {{input value=cachedLogin class="form-control" placeholder="è¾“å…¥ä½ çš„ä»¥å¤ªåŠåœ°å€"}}
       <span class="input-group-btn">
         <button class="btn btn-primary" type="button" {{action 'lookup' cachedLogin}}>
-          <span style="display: inline;"><i class="fa fa-search"></i> ²éÑ¯</span>
+          <span style="display: inline;"><i class="fa fa-search"></i> æŸ¥è¯¢</span>
         </button>
       </span>
     </div>
@@ -85,9 +85,9 @@
 <hr/>
 <div class="container">
 <div class="well">
-	<h3>ÈçºÎÁ´½Ó¿ó³Ø</h3>
+	<h3>å¦‚ä½•é“¾æ¥çŸ¿æ± </h3>
 	<hr>
-	<h4>1. Ñ¡Ôñ¿ó³Ø·şÎñÆ÷ºÍ¶Ë¿Ú:</h4>
+	<h4>1. é€‰æ‹©çŸ¿æ± æœåŠ¡å™¨å’Œç«¯å£:</h4>
 	<div class="table-responsive">
 		<table class="table table-condensed table-bordered">
 		<tbody>
@@ -120,13 +120,13 @@
 				Username
 			</th>
 			<td colspan="4">
-				ÄãµÄÒÔÌ«·»Ç®°üµØÖ·,ÀıÈç:0xb85150eb365e7df0941f0cf08235f987ba91506a
+				ä½ çš„ä»¥å¤ªåŠé’±åŒ…åœ°å€,ä¾‹å¦‚:0xb85150eb365e7df0941f0cf08235f987ba91506a
 			</td>
 		</tr>
 		</tbody>
 		</table>
 	</div>
-	<h4>2. Ñ¡ÔñÄãµÄÍÚ¿óÈí¼ş: </h4>
+	<h4>2. é€‰æ‹©ä½ çš„æŒ–çŸ¿è½¯ä»¶: </h4>
 	<ul role="tablist" class="nav nav-tabs">
 		<li role="presentation" class="active"><a href="#Claymore" aria-controls="Claymore" role="tab" data-toggle="tab">Claymore</a></li>
 		<li role="presentation"><a href="#Ethminer" aria-controls="Ethminer" role="tab" data-toggle="tab">Ethminer</a></li>
@@ -136,13 +136,13 @@
 		<div role="tabpanel" id="Claymore" class="tab-pane active">
 			<div class="panel panel-default">
 				<div class="panel-body">
-					<h5>ÏÂÔØ,ÅäÖÃºÍÔËĞĞClaymore miner</h5>
+					<h5>ä¸‹è½½,é…ç½®å’Œè¿è¡ŒClaymore miner</h5>
 					<ul>
-						<li>ÏÂÔØºÍÅäÖÃ½Ì³Ì: <a href="https://github.com/nanopool/Claymore-Dual-Miner" target="_blank" rel="nofollow">Github</a></li>
+						<li>ä¸‹è½½å’Œé…ç½®æ•™ç¨‹: <a href="https://github.com/nanopool/Claymore-Dual-Miner" target="_blank" rel="nofollow">Github</a></li>
 					</ul>
-					<h5>Ê¹ÓÃÒÔÏÂÃüÁîÆô¶¯ÍÚ¿ó,½«ÄãµÄÒÔÌ«·»Ç®°üµØÖ·×öÎªÓÃ»§Ãû</h5>
-					<pre>ethdcrminer64.exe -epool eth.3pool.cn:9999 -ewal ÒÔÌ«·»Ç®°üµØÖ· -epsw ÃÜÂë -eworker ¿ó¹¤Ãû</pre>
-					<h5>ÍêÕûÃüÁîÊµÀı</h5>
+					<h5>ä½¿ç”¨ä»¥ä¸‹å‘½ä»¤å¯åŠ¨æŒ–çŸ¿,å°†ä½ çš„ä»¥å¤ªåŠé’±åŒ…åœ°å€åšä¸ºç”¨æˆ·å</h5>
+					<pre>ethdcrminer64.exe -epool eth.3pool.cn:9999 -ewal ä»¥å¤ªåŠé’±åŒ…åœ°å€ -epsw å¯†ç  -eworker çŸ¿å·¥å</pre>
+					<h5>å®Œæ•´å‘½ä»¤å®ä¾‹</h5>
 					<pre>ethdcrminer64.exe -epool eth.3pool.cn:9999 -ewal 0xb85150eb365e7df0941f0cf08235f987ba91506a -epsw x -eworker rig-1</pre>
 				</div>
 			</div>
@@ -150,49 +150,49 @@
 		<div role="tabpanel" id="Ethminer" class="tab-pane">
 			<div class="panel panel-default">
 				<div class="panel-body">
-					<h5>ÏÂÔØ,ÅäÖÃºÍÔËĞĞEthminer</h5>
+					<h5>ä¸‹è½½,é…ç½®å’Œè¿è¡ŒEthminer</h5>
 					<ul>
-						<li>ÏÂÔØºÍÅäÖÃ½Ì³Ì: <a href="https://github.com/ethereum-mining/ethminer/releases" target="_blank" rel="nofollow">Github</a></li>
+						<li>ä¸‹è½½å’Œé…ç½®æ•™ç¨‹: <a href="https://github.com/ethereum-mining/ethminer/releases" target="_blank" rel="nofollow">Github</a></li>
 					</ul>
-					<h5>Ê¹ÓÃÒÔÏÂÃüÁîÆô¶¯ÍÚ¿ó,½«ÄãµÄÒÔÌ«·»Ç®°üµØÖ·×öÎªÓÃ»§Ãû</h5>
+					<h5>ä½¿ç”¨ä»¥ä¸‹å‘½ä»¤å¯åŠ¨æŒ–çŸ¿,å°†ä½ çš„ä»¥å¤ªåŠé’±åŒ…åœ°å€åšä¸ºç”¨æˆ·å</h5>
 					<pre>setx GPU_FORCE_64BIT_PTR 0
 setx GPU_MAX_HEAP_SIZE 100
 setx GPU_USE_SYNC_OBJECTS 1
 setx GPU_MAX_ALLOC_PERCENT 100
 setx GPU_SINGLE_ALLOC_PERCENT 100
-ethminer.exe --farm-recheck 200 -G -S eth.3pool.cn:9999 -O ÒÔÌ«·»Ç®°üµØÖ·.¿ó¹¤Ãû</pre>
-					<h5>ÍêÕûÃüÁîÊµÀı</h5>
+ethminer.exe --farm-recheck 200 -G -S whayla.xyz:9999 -O ä»¥å¤ªåŠé’±åŒ…åœ°å€.çŸ¿å·¥å</pre>
+					<h5>å®Œæ•´å‘½ä»¤å®ä¾‹</h5>
 					<pre>setx GPU_FORCE_64BIT_PTR 0
 setx GPU_MAX_HEAP_SIZE 100
 setx GPU_USE_SYNC_OBJECTS 1
 setx GPU_MAX_ALLOC_PERCENT 100
 setx GPU_SINGLE_ALLOC_PERCENT 100
-ethminer.exe --farm-recheck 200 -G -S eth.3pool.cn:9999 -O 0xb85150eb365e7df0941f0cf08235f987ba91506a.rig-1</pre>
+ethminer.exe --farm-recheck 200 -G -S whayla.xyz:9999 -O 0xb85150eb365e7df0941f0cf08235f987ba91506a.rig-1</pre>
 				</div>
 			</div>
 		</div>
 		<div role="tabpanel" id="EthProxy" class="tab-pane">
 			<div class="panel panel-default">
 				<div class="panel-body">
-					<h5>ÏÂÔØ,ÅäÖÃºÍÔËĞĞEth Proxy</h5>
+					<h5>ä¸‹è½½,é…ç½®å’Œè¿è¡ŒEth Proxy</h5>
 					<ul>
-						<li>ÏÂÔØºÍÅäÖÃ½Ì³Ì: <a href="https://github.com/Atrides/eth-proxy" target="_blank" rel="nofollow">Github</a></li>
+						<li>ä¸‹è½½å’Œé…ç½®æ•™ç¨‹: <a href="https://github.com/Atrides/eth-proxy" target="_blank" rel="nofollow">Github</a></li>
 					</ul>
-					<h5>ĞŞ¸Äeth-proxy.confÅäÖÃÎÄ¼şÄÚÈİ,½«ÄãµÄÒÔÌ«·»Ç®°üµØÖ·×öÎªÓÃ»§Ãû</h5>
-					<h5>ÍêÕûÃüÁîÊµÀı</h5>
+					<h5>ä¿®æ”¹eth-proxy.confé…ç½®æ–‡ä»¶å†…å®¹,å°†ä½ çš„ä»¥å¤ªåŠé’±åŒ…åœ°å€åšä¸ºç”¨æˆ·å</h5>
+					<h5>å®Œæ•´å‘½ä»¤å®ä¾‹</h5>
 					<pre>COIN = "ETH"
 HOST = "127.0.0.1"
 PORT = 8080
-# ½«ÏÂÃæµÄµØÖ·¸Ä³ÉÄãµÄÇ®°üµØÖ·,ÓÃÀ´½ÓÊÜÍÚµ½µÄ±Ò
-WALLET = "0xb85150eb365e7df0941f0cf08235f987ba91506a"
-# ¸ø¿ó»úÉèÖÃ±àºÅ
+# å°†ä¸‹é¢çš„åœ°å€æ”¹æˆä½ çš„é’±åŒ…åœ°å€,ç”¨æ¥æ¥å—æŒ–åˆ°çš„å¸
+WALLET = ""
+# ç»™çŸ¿æœºè®¾ç½®ç¼–å·
 ENABLE_WORKER_ID = True 
-# Ö÷¿ó³Ø
-POOL_HOST = "eth.3pool.cn"
+# ä¸»çŸ¿æ± 
+POOL_HOST = "whayla.xyz"
 POOL_PORT = 9999
-# ±¸ÓÃ¿ó³Ø
+# å¤‡ç”¨çŸ¿æ± 
 POOL_FAILOVER_ENABLE = True
-POOL_HOST_FAILOVER1 = "eth.3pool.cn"
+POOL_HOST_FAILOVER1 = "whayla.xyz"
 POOL_PORT_FAILOVER1 = 9009
 LOG_TO_FILE = True
 DEBUG = False</pre>

@@ -12,16 +12,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-md-2 text-center">
-				<div style="height: 130px" class="panel panel-info">
-					<div class="panel-heading">
-						<h3 class="panel-title">在线矿工</h3>
-					</div>
-					<div class="panel-body">
-						<h4>{{format-number stats.model.minersTotal}}</h4>
-					</div>
-				</div>
-			</div>
+		
 			<div class="col-md-2 text-center">
 				<div style="height: 130px" class="panel panel-default">
 					<div class="panel-heading">
@@ -49,6 +40,16 @@
 					</div>
 					<div class="panel-body">
 						<h4>{{with-metric-prefix stats.difficulty}}</h4>
+					</div>
+				</div>
+			</div>
+	<div class="col-md-2 text-center">
+				<div style="height: 130px" class="panel panel-info">
+					<div class="panel-heading">
+						<h3 class="panel-title">在线矿工</h3>
+					</div>
+					<div class="panel-body">
+						<h4>{{format-number stats.model.minersTotal}}</h4>
 					</div>
 				</div>
 			</div>

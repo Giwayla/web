@@ -5,18 +5,18 @@
       <div class="col-md-4 stats">
         <div style="display: block;">
           <i class="fa fa-cloud"></i> 即将获得的ETH: <span>{{format-balance model.stats.immature}}</span><br>
-          <small>Preliminary balance awaiting blocks to mature.</small>
+          
         </div>
         <div style="display: block;">
           <i class="fa fa-bank"></i> 将要发送的ETH: <span>{{format-balance model.stats.balance}}</span><br>
-          <small>Credited coins awaiting payout.</small>
+
         </div>
         {{#if model.stats.pending}}
         <div style="display: block;">
           <i class="fa fa-clock-o"></i> 已经支付的ETH: <span>{{format-balance model.stats.pending}}</span><br>
         </div>
         {{/if}}
-        <div style="display: block;"><i class="fa fa-money"></i> Total Paid: <span>{{format-balance model.stats.paid}}</span></div>
+        <div style="display: block;"><i class="fa fa-money"></i> 所有已支付: <span>{{format-balance model.stats.paid}}</span></div>
       </div>
       <div class="col-md-4 stats">
         {{#if model.stats.lastShare}}
@@ -33,7 +33,7 @@
         <div style="display: block;"><i class="fa fa-paper-plane-o"></i> 所有已支付数量: <span>{{format-number model.paymentsTotal}}</span></div>
         <div style="display: block;">
           <i class="fa fa-gears"></i> 本轮分享比: <span>{{format-number roundPercent style='percent' maximumFractionDigits='6'}}</span><br/>
-          <small>您对本轮贡献的百分比.</small>
+          
         </div>
         <div style="display: 块数;">
           <i class="fa fa-clock-o"></i>

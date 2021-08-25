@@ -1,5 +1,12 @@
 <div class="jumbotron">
-	<div class="container">
+  <div class="container">
+    <p class="lead">{{t "block.pool_rewards"}}</p>
+    <span>
+      {{format-html-message "block.pool_notice.html" success=520}}
+    </span>
+  </div>
+</div>
+<div class="container">
   {{#if model.luck}}
     {{partial "luck"}}
   {{/if}}

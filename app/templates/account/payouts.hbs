@@ -1,29 +1,29 @@
 <div class="container">
-  {{#if model.payments}}
-  <h4>Your Latest Payouts</h4>
+  {{#if model.workersOnline}}
+  <h4>Your Workers</h4>
   <div class="table-responsive">
     <table class="table table-condensed table-striped">
       <thead>
         <tr>
-          <th>Time</th>
-          <th>Tx ID</th>
-          <th>Amount</th>
+          <th>ID</th>
+          <th>Hashrate (rough, short average)</th>
+          <th>Hashrate (accurate, long average)</th>
+          <th>Last Share</th>
         </tr>
       </thead>
       <tbody>
-        {{#each model.payments as |tx|}}
-          <tr>
-            <td>{{format-date-locale tx.timestamp}}</td>
-            <td>
-              <a href="https://etherchain.org/tx/{{tx.tx}}" class="hash" rel="nofollow" target="_blank">{{tx.tx}}</a>
-            </td>
-            <td>{{format-balance tx.amount}}</td>
+        {{#each-in model.workers as |k v|}}
+          <tr class="{{if v.offline "warning" "success"}}">
+            <td>{{k}}</td>
+            <td>{{format-hashrate v.hr}}</td>
+            <td>{{format-hashrate v.hr2}}</td>
+            <td>{{format-relative (seconds-to-ms v.lastBeat)}}</td>
           </tr>
-        {{/each}}
+        {{/each-in}}
       </tbody>
     </table>
   </div>
   {{else}}
-  <h3>No payouts yet</h3>
+    <h3>No workers online</h3>
   {{/if}}
 </div>

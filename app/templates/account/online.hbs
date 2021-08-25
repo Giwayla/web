@@ -1,5 +1,5 @@
 <div class="container">
-  {{#if model.workersOffline}}
+  {{#if model.workersOnline}}
   <h4>Your Workers</h4>
   <div class="table-responsive">
     <table class="table table-condensed table-striped">
@@ -26,4 +26,8 @@
   {{else}}
     <h3>No workers online</h3>
   {{/if}}
+
+  <div class="alert alert-info" role="alert">
+    <strong>Your bulk stats JSON API URL:</strong> <a href="/api/accounts/{{model.login}}">/api/accounts/{{model.login}}</a>
+  </div>
 </div>
